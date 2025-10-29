@@ -17,14 +17,7 @@ AGE_DATA_DIR = "datasets/faceToAge"
 # MASK DATA PREPROCESSING
 # ===============================================================
 def preprocess_mask_data():
-    """
-    Prepares training and validation data generators for mask detection.
-    Assumes directory structure:
-        /datasets/Mask/train/mask/
-        /datasets/Mask/train/no_mask/
-        /datasets/Mask/test/mask/
-        /datasets/Mask/test/no_mask/
-    """
+   
     datagen = ImageDataGenerator(
         rescale=1./255,
         rotation_range=20,
@@ -142,6 +135,7 @@ def preprocess_age_data(limit=None):
     )
 
     return train_gen, val_gen, test_gen
+
 
 
 
