@@ -27,6 +27,15 @@ Face_Analysis_System/
 │ ├── train_mask_model.py
 │ ├── train_age_model.py
 │ └── detect_and_classify.py
+├──datasets/ # This directory can be manually downloaded if you wish to train your model yourself.
+|  ├── faceToAge/ # This contains 23708 pictures of varying age groups of people
+|  └── maskAndNoMask/ # This is divided into train and test datasets
+|     ├── test/
+|     |    ├──mask
+|     |    └──no_mask
+|     └── train/
+|          ├──mask
+|          └──no_mask
 └── README.md
 ```
 
@@ -60,6 +69,22 @@ age_classifier_v2.h5
 ```bash
 streamlit run app/web_app.py
 ```
+---
+
+### ⚠️⚠️ Problem with the downloads:
+
+If you face any problem accessing the pre-trained model then use the below link for the Google Drive link:
+- ☁️ Drive Link: https://drive.google.com/drive/folders/1CaNXvXBZbH51uXgF5J9i11Q4Ug2zegDM?usp=sharing
+
+If you wish to train your models locally yourself then download the datasets ```faceToAge``` and ```maskAndNoMask``` from the drive link to the ```datasets``` folder.
+Then run the following files from the ```src``` folder:
+```text
+train_mask_model.py
+train_age_model.py
+```
+
+
+---
 
 ## 📊 Technologies Used
 
@@ -68,3 +93,23 @@ streamlit run app/web_app.py
 - 🌐 Streamlit — Web interface
 - ☁️ Google Drive + gdown — Model hosting
 
+---
+
+### Acknowledgement
+
+- Mask Dataset: https://www.kaggle.com/datasets/omkargurav/face-mask-dataset?resource=download
+- UTKFace: https://www.kaggle.com/datasets/jangedoo/utkface-new/data
+
+---
+
+## Things to note
+
+### This project is made for research purposes only. The final product is non-commercial and we hold no licence over it.
+
+---
+## ✨ Authors
+
+### Abhinav Sah and Raj Aman
+
+- 📧 Developed as part of academic coursework (Face Analysis System Project)
+- 💡 “Where AI meets human expression.”
