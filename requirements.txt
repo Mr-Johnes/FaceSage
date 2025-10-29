@@ -1,0 +1,25 @@
+# Core Deep Learning Libraries
+tensorflow==2.16.1
+keras==3.3.3
+
+# Data Manipulation & Utilities
+numpy==1.26.4
+pandas==2.2.3
+scikit-learn==1.5.2
+
+# Image Processing
+opencv-python==4.10.0.84
+Pillow==10.4.0
+
+# Visualization (optional for analysis notebooks)
+matplotlib==3.9.2
+seaborn==0.13.2
+
+# Web Interface
+streamlit==1.39.0
+
+# Model Download Utility
+gdown==5.2.0
+
+# For compatibility and file handling
+requests==2.32.3
